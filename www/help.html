@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+        <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+        <head>
+                <meta charset="UTF-8">
+                <title>Blank App Designer Project Template</title>
+                <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+                <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+                <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+
+                <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's screen.
+  * Note that the meta viewport approach is being phased out in favor of the @viewport CSS rule.
+  * For a quick overview of both, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see what happens, try the app on a real device with and without a "meta viewport" tag.
+-->
+
+                <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+                <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+                <style>
+                        /* following three (cascaded) are equivalent to above three meta viewport statements */
+                            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+                            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                                @-ms-viewport { width: 100vw ; zoom: 100% ; }                           @viewport { width: 100vw ; zoom: 100% ; }
+                                @-ms-viewport { user-zoom: fixed ; }                                    @viewport { user-zoom: fixed ; }
+                                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+                </style>
+
+                <link rel="stylesheet" href="css/app.css">
+                <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+                <!-- IMPORTANT: Do not include your weinre script tag as part of your release builds! -->
+                <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+                <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+                <!-- Most third-party libraries should go here. References (below) are just examples to give you the general idea... -->
+                <!-- <script src="lib/mc/hammer.js"></script> -->
+                <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+                <script src="intelxdk.js"></script>
+                <!-- phantom library, needed for XDK "legacy" container api calls -->
+                <script src="cordova.js"></script>
+                <!-- phantom library, needed for Cordova api calls -->
+                <script src="xhr.js"></script>
+                <!-- phantom library, needed for XDK "legacy" container CORS -->
+
+                <script src="js/app.js"></script>
+                <!-- for your event code, see README and file comments for details -->
+                <script src="js/init-app.js"></script>
+                <!-- for your init code, see README and file comments for details -->
+                <script src="xdk/init-dev.js"></script>
+                <!-- normalizes device and document ready events, see file for details -->
+        </head>
+
+        <body bgcolor="#ebe8e3">
+
+                <!-- IMPORTANT: Do not include your weinre script tag as part of your release builds! -->
+                <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+                <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+                <div  id="mainpage">
+                    <div align="center">
+                        <div class="circleBase type1" style="margin-top:9%;background: #e7ba2f;" >
+                            <div align="center">
+                                <img src="images/help.png" style="width:50%;margin-top:20%" >                                  </div>
+                        </div>
+                    </div>
+                    <div align="center">
+                        <p style="margin-top:10px;margin-bottom:30px;">
+                            <font color="#808080"><i>Let you know, what we provide</i></font></p>
+                    </div>
+                    <div align="center">
+                        <div class="row">
+                            <div class="media-list-highlight-help1 content transparent">
+                                <span>
+                                    <div class="row" style="margin-left:5px">
+                                        <div class="col-xs-12">
+                                            
+                            
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                       <img src="images/schedule.png" style="width:50%;" >          
+                                    </div>
+                                </div>
+                                                   
+                        
+
+                                            <p class="pcharity" style="color:#F0F0F0">Dengan menu Schedule, anda bisa melihat jadwal kunjungan medis anda satu bulan ke depan. Satu hari sebelum waktu kunjungan, kamu akan meningatkan juga melalui SMA</p>
+                                        </div>  
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div style="margin-top:5px" class="media-list-highlight-help2 content transparent">
+                                <span>
+                                    <div class="row" style="margin-left:5px">
+                                        <div class="col-xs-12">
+                                            
+                            
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                       <img src="images/charity.png" style="width:50%;" >          
+                                    </div>
+                                </div>
+                                                   
+                        
+
+                                            <p class="pcharity" style="color:#F0F0F0">Dengan menu Open Charity, mari kita membantu saudara yang membutuhkan dana untuk pengobatan dan keperluan medis mereka</p>
+                                        </div>  
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div style="margin-top:5px" class="media-list-highlight-help3 content transparent">
+                                <span>
+                                    <div class="row" style="margin-left:5px">
+                                        <div class="col-xs-12">
+                                            
+                            
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                       <img src="images/blood.png" style="width:50%;" >          
+                                    </div>
+                                </div>
+                                                   
+                        
+
+                                            <p class="pcharity" style="color:#F0F0F0">Dengan menu Blood Stock, kita dapat mengetahui stok darah di rumah sakit, dan kita bisa mendonorkan darah kita, jika stok semakin berkurang</p>
+                                        </div>  
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
+               
+        </body>
+
+</html>
